@@ -1,0 +1,22 @@
+const button = document.querySelector('.button ');
+const hobby = document.querySelector('.hobby ');
+const form = document.querySelector('form');
+form.addEventListener('submit', function (event) {
+  event.preventDefault();
+  const email = event.currentTarget.email.value;
+  console.log(email);
+  const password = event.currentTarget.password.value;
+  console.log(password);
+  const contry = event.currentTarget.contry.value;
+  console.log(contry);
+  const phone = event.currentTarget.phone.value;
+  console.log(phone);
+  const fname = event.currentTarget.fname.value;
+  console.log(fname);
+  const sex = event.currentTarget.Sex.value;
+  console.log(sex);
+  const date = event.currentTarget.date.value;
+  console.log(date);
+  const hobby = event.currentTarget.hobby.checked;
+  console.log(hobby);
+});
